@@ -47,19 +47,27 @@ O projeto será desenvolvido em três etapas, cada uma com suas próprias condi�
 
 ## Instruções de Teste
 
-1. Instale as dependências:
+1. Clone o repositório e crie um ambiente virtual
+    ```
+   git clone https://github.com/lessaconstant/score_analysis_api.git
+   cd score_analysis_api
+    python -m venv venv
+    source venv/bin/activate  # No Windows use `venv\Scripts\activate`
+    ```
+
+2. Instale as dependências:
     ```
     pip install -r requirements.txt
     ```
 
-2. Configure o banco de dados e aplique as migrações:
+3. Configure o banco de dados e aplique as migrações:
     ```
     python manage.py migrate
     ```
 
-3. Adicione o arquivo model.pkl na raiz do projeto. Este arquivo será o modelo de machine learning que fará a análise de crédito.
+4. Adicione o arquivo model.pkl na raiz do projeto. Este arquivo será o algoritmo de machine learning que fará a análise de crédito.
 
-4. Crie um superusuário para acessar o painel administrativo (opcional):
+5. Crie um superusuário para acessar o painel administrativo (opcional):
     ```
     python manage.py createsuperuser
     ```
