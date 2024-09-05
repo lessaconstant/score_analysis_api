@@ -1,6 +1,6 @@
 # Sistema de Análise de Crédito com API REST
 
-Este projeto é um sistema de análise de crédito que utiliza uma API REST para integrar um modelo de Machine Learning (ML) com o objetivo de calcular o score de crédito dos clientes e determinar a elegibilidade para crédito. Desenvolvido como parte da avaliação para a matéria Laboratório de Programação 5, o foco é na criação e implementação de APIs RESTful.
+Este projeto é um sistema de análise de crédito que utiliza uma API REST para integrar um modelo de Machine Learning (ML) com o objetivo de calcular o score de crédito dos clientes e determinar a elegibilidade para crédito. Desenvolvido como parte da avaliação para a matéria Laboratório de Programação 5, o foco é na criação e implementação de APIs REST.
 
 ## Funcionalidades
 
@@ -32,9 +32,36 @@ O projeto será desenvolvido em três etapas, cada uma com suas próprias condi�
    - Criação de um modelo de dados para armazenar informações dos usuários, bancos e transações.
    - Configuração inicial do sistema e integração básica das APIs.
 
+   - Necessário presença de :
+    - 2 apps refentes ao tema
+    - 5 modelos contendo relacionamentos ManytoMany e Foreign Key
+    - Conter dados com os tipos CharField, IntegerField
+    - Conter, no mínimo, 4 Serializers e 4 APIVIEW
+    - Todos os modelos devem estar presentes no django admin
+
 2. **Segunda Etapa:**
    - Descrição das condições e objetivos será fornecida posteriormente.
 
 3. **Terceira Etapa:**
    - Descrição das condições e objetivos será fornecida posteriormente.
 
+## Instruções de Teste
+
+1. Instale as dependências:
+    ```
+    pip install -r requirements.txt
+    ```
+
+2. Configure o banco de dados e aplique as migrações:
+    ```
+    python manage.py migrate
+    ```
+
+3. Adicione o arquivo model.pkl na raiz do projeto. Este arquivo será o modelo de machine learning que fará a análise de crédito.
+
+4. Crie um superusuário para acessar o painel administrativo (opcional):
+    ```
+    python manage.py createsuperuser
+    ```
+## Contribuições
+Contribuições são bem-vindas. Envie um pull request ou abra uma issue para melhorias.
